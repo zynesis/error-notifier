@@ -1,0 +1,2 @@
+# ErrorNotifier plugin
+
