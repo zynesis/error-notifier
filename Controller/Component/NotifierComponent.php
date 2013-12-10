@@ -23,7 +23,7 @@ class NotifierComponent extends Component {
 		$Email = new CakeEmail();
 		$Email->viewVars($message);
 		try {
-			//$Email->template($template, 'default');
+			$Email->template('ErrorNotifier.' . $template, 'ErrorNotifier.default');
 			$Email->emailFormat('html');
 			$Email->from($from);
 			$Email->to($to);
